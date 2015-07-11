@@ -1,5 +1,7 @@
 This used to be on Cloud 9 but is now local!
 
+I did more!
+
 To get started, just do the following:
 
 1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
