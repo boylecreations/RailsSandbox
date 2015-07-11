@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			
+			<h1>Listing articles</h1>
+			<table>
+			  <tr>
+			    <th>Title</th>
+			    <th>Text</th>
+			  </tr>
+			 
+			  <% @articles.each do |article| %>
+			    <tr>
+			      <td><%= article.title %></td>
+			      <td><%= article.text %></td>
+			    </tr>
+			  <% end %>
+			</table>
+
+		</div>
+	</div>
+</div>
+ 
