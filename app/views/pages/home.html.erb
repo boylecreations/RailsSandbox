@@ -1,17 +1,21 @@
 
-<div class="jumbotron">
+<div class="jumbotron" style="background:white;">
     <div class="container">
-    <h1>Never lose your character again.</h1>
+    <h1>Never lose your data again</h1>
+    <br />
     <div class="col-sm-12">
       <div class="col-sm-6">
+          
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam massa, malesuada non sodales sed, vestibulum et mi. Morbi fermentum et nulla a varius. In aliquet velit nisl. Nam imperdiet gravida elit nec pretium. Curabitur non mi vulputate, hendrerit massa non, auctor purus. Morbi tristique augue velit, ac luctus libero tempus sit amet. Donec aliquam egestas odio..</p>
           <br />
-          <h1>Hello, Rails!</h1>
-          <%= link_to 'My Blog', controller: 'articles' %>
+
+          
+          <%= link_to "Browse", articles_path, class: "btn btn-primary btn-lg" %>
+          <%= link_to 'Create', new_article_path, controller: 'articles', class: "btn btn-primary btn-lg" %>
+         
       </div>
     </div>
-    <%= link_to "Register Now", "", class: "btn btn-primary btn-lg" %>
-    <%= link_to "Browse Characters", "", class: "btn btn-primary btn-lg" %>
+    
     
   </div>
 </div>
