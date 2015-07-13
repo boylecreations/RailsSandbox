@@ -1,0 +1,16 @@
+<div class="content"></div>
+    <div class="col-sm-6">
+    	<% @article.comments.each do |comment| %>
+        <div class="testimonials">
+        	<div class="active item">
+              <blockquote><p><%= comment.body %></p></blockquote>
+              <div class="carousel-info">
+                <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+                <div class="pull-left">
+                  <span class="testimonials-name"><%= comment.commenter %></span>
+                </div>
+              </div>
+         </div>
+         <% end %>
+    </div>
+ </div>

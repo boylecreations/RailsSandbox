@@ -23,9 +23,13 @@ Rails.application.routes.draw do
   #   resources :products
 
 
- 
-  resources :articles
- 
+  # Articles Resource => Restricted to Admin
+  resources :articles do
+    resources :comments
+  end
+
+  # Users Resource
+  # resources :users 
  
 
 

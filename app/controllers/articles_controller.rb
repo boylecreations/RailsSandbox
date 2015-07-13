@@ -30,8 +30,10 @@ class ArticlesController < ApplicationController
 	 
 	  if @article.update(article_params)
 	    redirect_to @article
+	    flash[:notice] = 'Article was successfully updated.'
 	  else
 	    render 'edit'
+	    flash[:notice] = 'Article was created not updated.'
 	  end
 	end
 
