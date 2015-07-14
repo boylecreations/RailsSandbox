@@ -1,36 +1,32 @@
 
 
-			<div class="col-sm-12 col-centered vpadding">
+		<div class="col-sm-12 col-centered vpadding">
+			
 				
-				  <h1><%= @article.title.titleize %></h1>
-				 
-				
-				 
-				<p>
-				  <%= @article.text %>
-				</p>
-
-				<%= render 'comment' %>
-
-				<h2>Add a comment:</h2>
-				<%= form_for([@article, @article.comments.build]) do |f| %>
-				  <p>
-				    <%= f.label :commenter %><br>
-				    <%= f.text_field :commenter %>
-				  </p>
-				  <p>
-				    <%= f.label :body %><br>
-				    <%= f.text_area :body %>
-				  </p>
-				  <p>
-				    <%= f.submit %>
-				  </p>
-				<% end %>
-
+			<h1><%= @article.title %></h1> 
+			
+				<hr />
+			
+			<p><%= @article.text %></p>
+			
+				<hr />
+			
+			<h2>Comments</h2>
+			<%= render 'comments/comment' %>
+			
+				<hr />
+			
+			<h2>Add Comment</h2>
+			<%= render 'comments/form' %>
+			
+			
+			<div class="well well-lg">
 				<%= link_to 'Edit', edit_article_path(@article), { :class=>"btn btn-default" } %>
 				<%= link_to 'Back', articles_path, { :class=>"btn btn-default" } %>
+			</div>							
 
 				
 				
-			</div>
+				
+		</div>
 

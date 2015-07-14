@@ -27,3 +27,24 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
+  
+  
+  
+  <div class="col-sm-12 col-centered vpadding">
+				
+				<h2>Add a comment:</h2>
+				<%= form_for([@article, @article.comments.build]) do |f| %>
+				  <p>
+				    <%= f.label :commenter %><br>
+				    <%= f.text_field :commenter %>
+				  </p>
+				  <p>
+				    <%= f.label :body %><br>
+				    <%= f.text_area :body %>
+				  </p>
+				  <p>
+				    <%= f.submit %>
+				  </p>
+				<% end %>
+			
+			</div>
