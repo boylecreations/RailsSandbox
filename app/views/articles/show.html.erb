@@ -1,36 +1,36 @@
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
-			<p>
-			  <strong>Title:</strong>
-			  <%= @article.title %>
-			</p>
-			 
-			<p>
-			  <strong>Text:</strong>
-			  <%= @article.text %>
-			</p>
 
-			<h2>Add a comment:</h2>
-			<%= form_for([@article, @article.comments.build]) do |f| %>
-			  <p>
-			    <%= f.label :commenter %><br>
-			    <%= f.text_field :commenter %>
-			  </p>
-			  <p>
-			    <%= f.label :body %><br>
-			    <%= f.text_area :body %>
-			  </p>
-			  <p>
-			    <%= f.submit %>
-			  </p>
-			<% end %>
 
-			<%= link_to 'Edit', edit_article_path(@article), { :class=>"btn btn-default" } %>
-			<%= link_to 'Back', articles_path, { :class=>"btn btn-default" } %>
+			<div class="col-sm-12 col-centered vpadding">
+				
+				  <h1><%= @article.title.titleize %></h1>
+				 
+				
+				 
+				<p>
+				  <%= @article.text %>
+				</p>
 
-			<%= render 'comment' %>
-			
-		</div>
-	</div>
-</div>
+				<%= render 'comment' %>
+
+				<h2>Add a comment:</h2>
+				<%= form_for([@article, @article.comments.build]) do |f| %>
+				  <p>
+				    <%= f.label :commenter %><br>
+				    <%= f.text_field :commenter %>
+				  </p>
+				  <p>
+				    <%= f.label :body %><br>
+				    <%= f.text_area :body %>
+				  </p>
+				  <p>
+				    <%= f.submit %>
+				  </p>
+				<% end %>
+
+				<%= link_to 'Edit', edit_article_path(@article), { :class=>"btn btn-default" } %>
+				<%= link_to 'Back', articles_path, { :class=>"btn btn-default" } %>
+
+				
+				
+			</div>
+

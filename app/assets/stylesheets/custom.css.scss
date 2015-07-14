@@ -6,6 +6,27 @@ $navbar-default-bg: #333;
 .navbar { border-radius: 0 !important; }
 * { border-radius: 0 !important; -webkit-border-radius: 0 !important; }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#mast { background:#333; padding:120px 0;}
+
+
+.navbar-default .navbar-toggle { border:none; }
+
+.navbar-toggle:hover { background:transparent; }
+
+
+.padding { padding:15px; }
+.vpadding { padding-top:15px; padding-bottom:15px; }
+.hpadding { padding-left:15px; padding-right:15px; }
+
+.navbar-default { border:none !important; }
+
+.fwidth .container { background:white; }
+
 /* Custom Snippets */
 /***
 User Profile Sidebar by @keenthemes
