@@ -1,3 +1,3 @@
-class Article < ActiveRecord::Base
-
+class User < ActiveRecord::Base
+	has_one :account
 end
